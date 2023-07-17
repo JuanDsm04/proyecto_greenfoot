@@ -8,6 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class pez extends Actor
 {
+    private int velocidad;
+    
+    public pez(int rapidez){
+        velocidad = rapidez;
+    }
+    
     /**
      * Act - do whatever the pez wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -15,5 +21,28 @@ public class pez extends Actor
     public void act()
     {
         // Add your action code here.
+        if(Greenfoot.isKeyDown("right")){
+            if(getX() < 800){
+                setLocation(getX() + velocidad, getY());
+            }
+        }
+        
+        if(Greenfoot.isKeyDown("left")){
+            if(getX() > 200){
+                setLocation(getX() - velocidad, getY());
+            }
+        }
+        
+        if(Greenfoot.isKeyDown("up")){
+            if(getY() > 150){
+                setLocation(getX(), getY() - velocidad);
+            }
+        }
+        
+        if(Greenfoot.isKeyDown("down")){
+            if(getY() < 680){
+                setLocation(getX(), getY() + velocidad);
+            }
+        }
     }
 }
