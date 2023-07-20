@@ -22,7 +22,7 @@ public class pez extends Actor
     {
         // Add your action code here.
         if(Greenfoot.isKeyDown("right")){
-            if(getX() < 800){
+            if(getX() < 650){
                 setLocation(getX() + velocidad, getY());
             }
         }
@@ -40,9 +40,19 @@ public class pez extends Actor
         }
         
         if(Greenfoot.isKeyDown("down")){
-            if(getY() < 680){
+            if(getY() < 550){
                 setLocation(getX(), getY() + velocidad);
             }
+        }
+    }
+    
+    public void checkMordida(){
+        Actor mordida = getOneIntersectingObject(tiburon.class);
+        
+        if(mordida != null){
+            getWorld().removeObject(mordida);
+            getWorld().removeObject(this);
+            Greenfoot.stop();
         }
     }
 }
