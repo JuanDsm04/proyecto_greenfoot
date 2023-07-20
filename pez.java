@@ -1,13 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class pez here.
+ * Esta clase define las funcionalidades del jugador (pez), como lo son 
+ * su velocidad, su jugabilidad y su movilidad dentro del juego.
  * 
- * @author (your name) 
+ * @author (Juan Solís y Gabriel Quan) 
  * @version (a version number or a date)
  */
 public class pez extends Actor
 {
+    // Controlar la velocidad del jugador
     private int velocidad;
     
     public pez(int rapidez){
@@ -20,25 +22,30 @@ public class pez extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        // Direcciones hacias las que se puede mover el jugador
+        
+        // Derecha
         if(Greenfoot.isKeyDown("right")){
             if(getX() < 650){
                 setLocation(getX() + velocidad, getY());
             }
         }
         
+        // Izquierda
         if(Greenfoot.isKeyDown("left")){
             if(getX() > 200){
                 setLocation(getX() - velocidad, getY());
             }
         }
         
+        // Arriba
         if(Greenfoot.isKeyDown("up")){
             if(getY() > 150){
                 setLocation(getX(), getY() - velocidad);
             }
         }
         
+        // Abajo
         if(Greenfoot.isKeyDown("down")){
             if(getY() < 550){
                 setLocation(getX(), getY() + velocidad);
@@ -46,6 +53,7 @@ public class pez extends Actor
         }
     }
     
+    // Si un tiburon se lo come
     public void checkMordida(){
         Actor mordida = getOneIntersectingObject(tiburon.class);
         
@@ -54,5 +62,10 @@ public class pez extends Actor
             getWorld().removeObject(this);
             Greenfoot.stop();
         }
+    }
+    
+    // Aumentar la velocidad del jugador (pez)
+    public void aumentar_velocidad(){
+        velocidad++;
     }
 }
