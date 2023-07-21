@@ -51,6 +51,10 @@ public class MyWorld extends World
         
     }
     
+    public void musica_fondo(){
+        
+    }
+    
     // Comportamientos del jugador y contadores
     public void act(){
         aumentar_dificultad();
@@ -80,7 +84,6 @@ public class MyWorld extends World
     
     // Agregar nuevo tiburones por cada nivel
     public void agregar_tiburones(){
-        
         // Si aun no hay tiburones
         if (cantidad_tiburones == 0){
             
@@ -135,6 +138,7 @@ public class MyWorld extends World
             // Aumenta la velocidad del pez y el nivel aumenta en uno
             velocidad_pez++;
             nivel.add(1);
+            Greenfoot.playSound("nuevo_nivel.wav");
             
             jugador.aumentar_velocidad();
             

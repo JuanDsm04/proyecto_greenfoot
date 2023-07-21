@@ -64,6 +64,7 @@ public class pez extends Actor
         if(mordida != null){
             getWorld().removeObject(mordida);
             getWorld().removeObject(this);
+            Greenfoot.playSound("mordida.wav");
             Greenfoot.stop();
         }
     }
