@@ -5,7 +5,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * su velocidad, su jugabilidad y su movilidad dentro del juego.
  * 
  * @author (Juan Solís y Gabriel Quan) 
- * @version (a version number or a date)
+ * @version (1.0.0)
  */
 public class pez extends Actor
 {
@@ -14,12 +14,14 @@ public class pez extends Actor
     
     public pez(int rapidez){
         velocidad = rapidez;
+        
     }
     
     /**
      * Act - do whatever the pez wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    
     public void act()
     {
         // Direcciones hacias las que se puede mover el jugador
@@ -51,6 +53,8 @@ public class pez extends Actor
                 setLocation(getX(), getY() + velocidad);
             }
         }
+        
+        checkMordida();
     }
     
     // Si un tiburon se lo come
@@ -67,5 +71,6 @@ public class pez extends Actor
     // Aumentar la velocidad del jugador (pez)
     public void aumentar_velocidad(){
         velocidad++;
+        
     }
 }

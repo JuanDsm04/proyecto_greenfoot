@@ -1,17 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class tiburon here.
+ * Esta clase contiene los metodos de los enemigos del juego (tiburones)
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Juan Solis y Gabriel Quan) 
+ * @version (1.0.0)
  */
 public class tiburon extends Actor
 {
     private int velocidad;
     
+    // Velocidad de los tiburones
     public tiburon(int v){
         velocidad = v;
+        
     }
     
     /**
@@ -23,9 +25,15 @@ public class tiburon extends Actor
         // Add your action code here.
         setLocation(getX(), getY() + velocidad);
         
-        if (getY() > getWorld().getHeight() ){
+        if (getY() >= getWorld().getHeight()-1){
             MyWorld game = (MyWorld) getWorld();
             game.removeObject(this);
+            
+            // Al desaparecer tiburones (es decir que pudo esquivarlos)
+            game.incremento_puntuacion(1); // Aumenta la puntuación
+            game.disminuir_numero_tiburones();
+            game.aumentar_numero_superados();
+        
         }
     }
 }

@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=pez
-comment0.text=\r\n\ Esta\ clase\ define\ las\ funcionalidades\ del\ jugador\ (pez),\ como\ lo\ son\ \r\n\ su\ velocidad,\ su\ jugabilidad\ y\ su\ movilidad\ dentro\ del\ juego.\r\n\ \r\n\ @author\ (Juan\ Sol\u00EDs\ y\ Gabriel\ Quan)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Esta\ clase\ define\ las\ funcionalidades\ del\ jugador\ (pez),\ como\ lo\ son\ \r\n\ su\ velocidad,\ su\ jugabilidad\ y\ su\ movilidad\ dentro\ del\ juego.\r\n\ \r\n\ @author\ (Juan\ Sol\u00EDs\ y\ Gabriel\ Quan)\ \r\n\ @version\ (1.0.0)\r\n
 comment1.params=rapidez
 comment1.target=pez(int)
 comment2.params=
