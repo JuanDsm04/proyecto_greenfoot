@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Jugar
+comment0.text=\r\n\ Esta\ clase\ define\ los\ m\u00E9todos\ b\u00E1sicos\ de\ un\ bot\u00F3n\ con\ la\ funcionalidad\r\n\ de\ iniciar\ el\ juego\ para\ comenzar\ a\ jugar.\r\n\ \r\n\ @author\ (Juan\ Sol\u00EDs\ y\ Gabriel\ Quan)\ \ \r\n\ @version\ (1.0.0)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=Jugar()
+numComments=3

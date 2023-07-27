@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Button
+comment0.text=\r\n\ Esta\ clase\ define\ las\ funcionalidades\ (m\u00E9todos)\ b\u00E1sicos\ de\ un\ bot\u00F3n\ dentro\ \r\n\ del\ juego.\r\n\ \r\n\ @author\ (Juan\ Sol\u00EDs\ y\ Gabriel\ Quan)\r\n\ @version\ (1.0.0)\r\n
+comment1.params=oceano
+comment1.target=void\ click(greenfoot.World)
+numComments=2
