@@ -27,7 +27,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Tamaño del mundo
-        super(855, 638, 1);
+        super(689, 638, 1);
         
         // Valores iniciales del juego
         tiburones_superados = 0;
@@ -93,13 +93,13 @@ public class MyWorld extends World
             // Agregar el primer tiburon en una corriente random
             if(corriente_agua == 0){
                 // Agregar al tiburon con la misma velocidad del jugador
-                addObject(new tiburon(velocidad_pez), 250, 80);
+                addObject(new tiburon(velocidad_pez), 175, 80);
                 
             }else if (corriente_agua == 1){
-                addObject(new tiburon(velocidad_pez), 450, 80);
+                addObject(new tiburon(velocidad_pez), 355, 80);
                 
             }else{
-                addObject(new tiburon(velocidad_pez), 650, 80);
+                addObject(new tiburon(velocidad_pez), 520, 80);
                 
             }
             
@@ -109,13 +109,13 @@ public class MyWorld extends World
             
             if(corriente_agua == 0){
                 // Agregar al tiburon con la misma velocidad del jugador
-                addObject(new tiburon(velocidad_pez), 250, 80);
+                addObject(new tiburon(velocidad_pez), 175, 80);
                 
             }else if (corriente_agua == 1){
-                addObject(new tiburon(velocidad_pez), 450, 80);
+                addObject(new tiburon(velocidad_pez), 355, 80);
                 
             }else{
-                addObject(new tiburon(velocidad_pez), 650, 80);
+                addObject(new tiburon(velocidad_pez), 520, 80);
                 
             }
             

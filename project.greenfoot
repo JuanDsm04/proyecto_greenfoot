@@ -1,5 +1,5 @@
 #Greenfoot project file
-class.MyWorld.image=fondo.png
+class.MyWorld.image=fondo_mar.png
 class.pez.image=pez.png
 class.tiburon.image=tiburon.png
 dependency1.from=MyWorld
