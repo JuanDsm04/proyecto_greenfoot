@@ -28,29 +28,15 @@ public class pez extends Actor
         
         // Derecha
         if(Greenfoot.isKeyDown("right")){
-            if(getX() < 650){
+            if(getX() < 525){
                 setLocation(getX() + velocidad, getY());
             }
         }
         
         // Izquierda
         if(Greenfoot.isKeyDown("left")){
-            if(getX() > 200){
+            if(getX() > 180){
                 setLocation(getX() - velocidad, getY());
-            }
-        }
-        
-        // Arriba
-        if(Greenfoot.isKeyDown("up")){
-            if(getY() > 150){
-                setLocation(getX(), getY() - velocidad);
-            }
-        }
-        
-        // Abajo
-        if(Greenfoot.isKeyDown("down")){
-            if(getY() < 550){
-                setLocation(getX(), getY() + velocidad);
             }
         }
         

@@ -1,5 +1,5 @@
 #Greenfoot project file
-class.MyWorld.image=fondo_mar.png
+class.MyWorld.image=fondo_game.png
 class.pez.image=pez.png
 class.tiburon.image=tiburon.png
 dependency1.from=MyWorld
@@ -17,11 +17,11 @@ dependency4.type=UsesDependency
 dependency5.from=pez
 dependency5.to=tiburon
 dependency5.type=UsesDependency
-editor.fx.0.height=737
+editor.fx.0.height=705
 editor.fx.0.width=814
-editor.fx.0.x=652
-editor.fx.0.y=78
-height=838
+editor.fx.0.x=466
+editor.fx.0.y=56
+height=830
 package.numDependencies=5
 package.numTargets=4
 project.charset=UTF-8

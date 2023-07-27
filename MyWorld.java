@@ -27,7 +27,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Tamaño del mundo
-        super(689, 638, 1);
+        super(687, 638, 1);
         
         // Valores iniciales del juego
         tiburones_superados = 0;
@@ -35,8 +35,8 @@ public class MyWorld extends World
         velocidad_pez = 2;
         
         // Contadores
-        puntaje = new contador("Puntos: ");
-        nivel = new contador("Nivel: ");
+        puntaje = new contador(" ");
+        nivel = new contador(" ");
         
         // Agregar nivel inicial (1)
         nivel.add(1);
@@ -45,9 +45,9 @@ public class MyWorld extends World
         jugador = new pez(velocidad_pez+6);
         
         // Agregar al jugador y los contadores en el mundo
-        addObject(jugador, 440, 550);
-        addObject(nivel, 90, 40);
-        addObject(puntaje, 98, 80);
+        addObject(jugador, 350, 565);
+        addObject(nivel, 107, 50);
+        addObject(puntaje, 107, 94);
         
     }
     
@@ -93,7 +93,7 @@ public class MyWorld extends World
             // Agregar el primer tiburon en una corriente random
             if(corriente_agua == 0){
                 // Agregar al tiburon con la misma velocidad del jugador
-                addObject(new tiburon(velocidad_pez), 175, 80);
+                addObject(new tiburon(velocidad_pez), 180, 80);
                 
             }else if (corriente_agua == 1){
                 addObject(new tiburon(velocidad_pez), 355, 80);
@@ -109,7 +109,7 @@ public class MyWorld extends World
             
             if(corriente_agua == 0){
                 // Agregar al tiburon con la misma velocidad del jugador
-                addObject(new tiburon(velocidad_pez), 175, 80);
+                addObject(new tiburon(velocidad_pez), 180, 80);
                 
             }else if (corriente_agua == 1){
                 addObject(new tiburon(velocidad_pez), 355, 80);

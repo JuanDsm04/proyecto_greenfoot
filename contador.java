@@ -21,14 +21,14 @@ public class contador extends Actor
     public contador(String prefix)
     {
         texto = prefix;
-        longitudTexto = (texto.length() + 2) * 15;
+        longitudTexto = (texto.length() + 1) * 15;
 
         setImage(new GreenfootImage(longitudTexto, 20));
         GreenfootImage image = getImage();
 
         Font font = image.getFont();
-        image.setFont(new Font("OptimusPrinceps", false, false , 25));
-        image.setColor(Color.BLACK);
+        image.setFont(new Font("OptimusPrinceps", false, false , 20));
+        image.setColor(Color.WHITE);
         
         actualizarContador();
     }
