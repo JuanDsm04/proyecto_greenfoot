@@ -18,6 +18,7 @@ public class MyWorld extends World
     private int velocidad_pez;
     private int cantidad_tiburones;
     private int tiburones_superados_nivel;
+    public static GreenfootSound backgroundMusic;
     
     /**
      * Constructor for objects of class MyWorld.
@@ -51,14 +52,15 @@ public class MyWorld extends World
         
     }
     
-    public void musica_fondo(){
-        
+    public void musica(){
+
     }
     
     // Comportamientos del jugador y contadores
     public void act(){
         aumentar_dificultad();
         agregar_tiburones();
+        musica();
     }
     
     // Aumentar la puntuación del jugador

@@ -27,14 +27,14 @@ public class pez extends Actor
         // Direcciones hacias las que se puede mover el jugador
         
         // Derecha
-        if(Greenfoot.isKeyDown("right")){
+        if(Greenfoot.isKeyDown("d")){
             if(getX() < 525){
                 setLocation(getX() + velocidad, getY());
             }
         }
         
         // Izquierda
-        if(Greenfoot.isKeyDown("left")){
+        if(Greenfoot.isKeyDown("a")){
             if(getX() > 180){
                 setLocation(getX() - velocidad, getY());
             }
@@ -51,7 +51,7 @@ public class pez extends Actor
             getWorld().removeObject(mordida);
             getWorld().removeObject(this);
             Greenfoot.playSound("mordida.wav");
-            Greenfoot.stop();
+            Greenfoot.setWorld(new MenuFin());
         }
     }
     

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MenuFin
+comment0.text=\r\n\ Esta\ clase\ define\ las\ funcionalidades\ que\ tendra\ el\ men\u00FA\ que\ se\ mostrar\u00E1\r\n\ al\ momento\ de\ que\ el\ jugador\ pierda\ en\ el\ juego,\ permitiendole\ volver\ a\r\n\ jugar.\r\n\ \r\n\ @author\ (Juan\ Sol\u00EDs\ y\ Gabriel\ Quan)\ \r\n\ @version\ (1.0.0)\r\n
+comment1.params=
+comment1.target=MenuFin()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MenuFin.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ volverJugar()
+numComments=3
