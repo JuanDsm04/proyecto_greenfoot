@@ -18,7 +18,8 @@ public class MyWorld extends World
     private int velocidad_pez;
     private int cantidad_tiburones;
     private int tiburones_superados_nivel;
-    public static GreenfootSound backgroundMusic;
+    
+    public GreenfootSound cambio_nivel = new GreenfootSound("cambio_nivel.wav");
     
     /**
      * Constructor for objects of class MyWorld.
@@ -140,8 +141,9 @@ public class MyWorld extends World
             // Aumenta la velocidad del pez y el nivel aumenta en uno
             velocidad_pez++;
             nivel.add(1);
-            Greenfoot.playSound("nuevo_nivel.wav");
-            
+            cambio_nivel.play();
+            cambio_nivel.setVolume(65);
+        
             jugador.aumentar_velocidad();
             
         }

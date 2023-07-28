@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Menu extends World
 {
-
+    public GreenfootSound musica_fondo = new GreenfootSound("musica_fondo.mp3");
     /**
      * Constructor for objects of class Menu.
      * 
@@ -20,10 +20,16 @@ public class Menu extends World
         super(687, 638, 1);
         
         comenzarJuego();
+        musica();
     }
     
     private void comenzarJuego(){
         Jugar jugar = new Jugar();
         addObject(jugar,400 ,450);
+    }
+    
+    public void musica(){
+        musica_fondo.playLoop();
+        musica_fondo.setVolume(45);
     }
 }
