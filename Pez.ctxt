@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=pez
+comment0.text=\r\n\ Esta\ clase\ define\ las\ funcionalidades\ del\ jugador\ (pez),\ como\ lo\ son\ \r\n\ su\ velocidad,\ su\ jugabilidad\ y\ su\ movilidad\ dentro\ del\ juego.\r\n\ \r\n\ @author\ (Juan\ Sol\u00EDs\ y\ Gabriel\ Quan)\ \r\n\ @version\ (1.0.0)\r\n
+comment1.params=rapidez
+comment1.target=pez(int)
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ pez\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ checkMordida()
+comment4.params=
+comment4.target=void\ aumentar_velocidad()
+numComments=5
