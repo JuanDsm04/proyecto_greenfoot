@@ -10,9 +10,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     // Inicializar variables
-    private contador puntaje;
-    private contador nivel;
-    private pez jugador;
+    private Contador puntaje;
+    private Contador nivel;
+    private Pez jugador;
     
     private int tiburones_superados;
     private int velocidad_pez;
@@ -37,14 +37,14 @@ public class MyWorld extends World
         velocidad_pez = 2;
         
         // Contadores
-        puntaje = new contador(" ");
-        nivel = new contador(" ");
+        puntaje = new Contador(" ");
+        nivel = new Contador(" ");
         
         // Agregar nivel inicial (1)
         nivel.add(1);
         
         // Pez jugador con la velocidad inicial 
-        jugador = new pez(velocidad_pez+6);
+        jugador = new Pez(velocidad_pez+6);
         
         // Agregar al jugador y los contadores en el mundo
         addObject(jugador, 350, 565);
@@ -96,13 +96,13 @@ public class MyWorld extends World
             // Agregar el primer tiburon en una corriente random
             if(corriente_agua == 0){
                 // Agregar al tiburon con la misma velocidad del jugador
-                addObject(new tiburon(velocidad_pez), 180, 80);
+                addObject(new Tiburon(velocidad_pez), 180, 80);
                 
             }else if (corriente_agua == 1){
-                addObject(new tiburon(velocidad_pez), 355, 80);
+                addObject(new Tiburon(velocidad_pez), 355, 80);
                 
             }else{
-                addObject(new tiburon(velocidad_pez), 520, 80);
+                addObject(new Tiburon(velocidad_pez), 520, 80);
                 
             }
             
@@ -112,13 +112,13 @@ public class MyWorld extends World
             
             if(corriente_agua == 0){
                 // Agregar al tiburon con la misma velocidad del jugador
-                addObject(new tiburon(velocidad_pez), 180, 80);
+                addObject(new Tiburon(velocidad_pez), 180, 80);
                 
             }else if (corriente_agua == 1){
-                addObject(new tiburon(velocidad_pez), 355, 80);
+                addObject(new Tiburon(velocidad_pez), 355, 80);
                 
             }else{
-                addObject(new tiburon(velocidad_pez), 520, 80);
+                addObject(new Tiburon(velocidad_pez), 520, 80);
                 
             }
             

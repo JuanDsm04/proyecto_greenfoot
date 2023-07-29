@@ -18,12 +18,12 @@ public class Jugar extends Button
     // Botón para jugar
     public Jugar(){
         // Instancia y posición del botón
-        GreenfootImage botonJugar = new GreenfootImage(265, 60);
+        GreenfootImage botonJugar = new GreenfootImage(415, 60);
         
         // Características del botón
-        botonJugar.setFont(new Font(true, false, 50));
+        botonJugar.setFont(new Font(true, false, 40));
         botonJugar.setColor(Color.WHITE);
-        botonJugar.drawString("Jugar", 0, 40);
+        botonJugar.drawString("Click para jugar", 0, 40);
         setImage(botonJugar);
     }
 }

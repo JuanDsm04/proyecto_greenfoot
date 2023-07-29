@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Tiburon
+comment0.text=\r\n\ Esta\ clase\ contiene\ los\ metodos\ de\ los\ enemigos\ del\ juego\ (tiburones)\r\n\ \r\n\ @author\ (Juan\ Solis\ y\ Gabriel\ Quan)\ \r\n\ @version\ (1.0.0)\r\n
+comment1.params=v
+comment1.target=Tiburon(int)
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ tiburon\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=3
